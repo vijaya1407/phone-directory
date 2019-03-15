@@ -1,0 +1,52 @@
+
+.top-bar {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}
+.container {
+    padding: 100px 50px 0;   
+}
+.container .btn {
+    padding: 12px 25px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    background-color: #01b707;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.container .btn:hover {
+    background-color: #02db08;
+    cursor: pointer;
+}
+.container table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.container table th {
+    text-align: left;
+    font-weight: bold;
+    padding: 12px 8px;
+}
+table th, table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-right: none;
+}
+#delete {
+    padding: 8px 10px;
+    background-color: #c43434;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+#delete:hover {
+    cursor: pointer;
+    background-color: #f85050;
+    
+}

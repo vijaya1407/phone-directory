@@ -1,0 +1,28 @@
+<div class="container">
+  <button class="btn" (click)="goBack()">BACK</button>
+
+
+  <form>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input [(ngModel)]="name" name="name" #subscriber="ngModel" type="text" id="name" class="form-control" required>
+      <div class="alert alert-danger" *ngIf="subscriber.touched && subscriber.invalid">
+        <div *ngIf="subscriber.errors.required">Name is Required...</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="phoneNo">Phone:</label>
+      <input [(ngModel)]="phoneNo" name="phoneNo" #phone="ngModel" type="number" id="phoneNo" class="form-control" required>
+      <div class="alert alert-danger" *ngIf="phone.touched && phone.invalid">
+        <div *ngIf="phone.errors.required">Phone Number is Required...</div>
+      </div>
+    </div>
+  </form>
+
+  <h4>Subscriber to be added:</h4>
+  <p>Name: {{ name }}</p>
+  <p>Phone: {{ phoneNo }}</p>
+
+  <button class="btn" id="add" (click)="addSubscriber()">Add</button>
+</div>

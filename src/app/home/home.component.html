@@ -1,0 +1,28 @@
+
+
+<div class="top-bar">
+  <h2>Phone Directory</h2>
+</div>
+
+<div class="container">
+  <button routerLink="/add" class="btn">ADD</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>PHONE</th>
+        <th>DIRECTORY</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let subscriber of subscriberList; index as i">
+        <td>{{ subscriber.name }}</td>
+        <td>{{ subscriber.phone }}</td>
+        <td>
+          <button class="btn" id="delete" (click)="deleteSubscriber(i)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
